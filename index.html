@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sacred Lotus Guild</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111318;
+      --panel: #1a1f2b;
+      --text: #f5f7ff;
+      --muted: #c4cae3;
+      --accent: #b784ff;
+      --accent-2: #67d7f5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top, #232a3d 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem;
+    }
+
+    .hero {
+      text-align: center;
+      background: linear-gradient(145deg, rgba(183,132,255,.14), rgba(103,215,245,.1));
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 16px;
+      padding: 2.25rem 1.5rem;
+      backdrop-filter: blur(2px);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: .02em;
+    }
+
+    .subtitle {
+      margin: .75rem 0 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .highlight { color: var(--accent-2); }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 12px;
+      padding: 1rem;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.05rem;
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 1.25rem;
+      font-size: .95rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>Sacred Lotus</h1>
+      <p class="subtitle">World of Warcraft guild landing page for our <span class="highlight">community</span>, <span class="highlight">raids</span>, and <span class="highlight">adventures</span>.</p>
+    </section>
+
+    <section class="grid" aria-label="Guild highlights">
+      <article class="card">
+        <h2>Who We Are</h2>
+        <p>A friendly guild focused on teamwork, progression, and enjoying Azeroth together.</p>
+      </article>
+      <article class="card">
+        <h2>What We Do</h2>
+        <p>Group content across raids, Mythic+, and social guild events for all experience levels.</p>
+      </article>
+      <article class="card">
+        <h2>Join Us</h2>
+        <p>Interested in running with Sacred Lotus? Reach out in game and grow with us.</p>
+      </article>
+    </section>
+
+    <footer>© Sacred Lotus Guild</footer>
+  </main>
+</body>
+</html>
